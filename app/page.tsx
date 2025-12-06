@@ -52,7 +52,6 @@ export default function Home() {
     setResponse(null);
 
     try {
-      const API_URL = process.env.NEXT_PUBLIC_API_URL || "http://127.0.0.1:8000";
       const API_URL = process.env.NEXT_PUBLIC_API_URL || "https://tutorb.onrender.com/teach";
       const res = await fetch(`${API_URL}/teach`, {
         method: "POST",
