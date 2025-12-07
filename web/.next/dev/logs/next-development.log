@@ -1,14 +1,14 @@
-[00:00:05.893] Server  LOG      ✓ Ready in 4.3s
-[00:00:12.959] Server  LOG      ○ Compiling / ...
-[00:00:17.748] Server  ERROR    ⨯ ./app/page.tsx:18:3
+[00:00:09.923] Server  LOG      ✓ Ready in 7.7s
+[00:00:13.468] Server  LOG      ○ Compiling / ...
+[00:00:36.936] Server  ERROR    ⨯ ./app/page.tsx:14:46
 Ecmascript file had an error
-  16 |   MapPin,
-  17 |   Search,
-> 18 |   AlertCircle,
-     |   ^^^^^^^^^^^
-  19 |   FileText,
-  20 |   Globe,
-  21 |   ImageIcon,
+  12 |   ImageIcon,
+  13 | } from "lucide-react";
+> 14 | import { BookOpen, Sparkles, MapPin, Search, AlertCircle, FileText, Globe, ImageIcon, Volume2, StopCircle } from "lucide-react";
+     |                                              ^^^^^^^^^^^
+  15 | import ReactMarkdown from "react-markdown";
+  16 | import remarkMath from "remark-math";
+  17 | import rehypeKatex from "rehype-katex";
 
 the name `AlertCircle` is defined multiple times
 
@@ -23,15 +23,15 @@ Import traces:
 
 
 
-./app/page.tsx:14:3
+./app/page.tsx:14:10
 Ecmascript file had an error
-  12 | import ReactMarkdown from "react-markdown";
-  13 | import {
-> 14 |   BookOpen,
-     |   ^^^^^^^^
-  15 |   Sparkles,
-  16 |   MapPin,
-  17 |   Search,
+  12 |   ImageIcon,
+  13 | } from "lucide-react";
+> 14 | import { BookOpen, Sparkles, MapPin, Search, AlertCircle, FileText, Globe, ImageIcon, Volume2, StopCircle } from "lucide-react";
+     |          ^^^^^^^^
+  15 | import ReactMarkdown from "react-markdown";
+  16 | import remarkMath from "remark-math";
+  17 | import rehypeKatex from "rehype-katex";
 
 the name `BookOpen` is defined multiple times
 
@@ -46,15 +46,15 @@ Import traces:
 
 
 
-./app/page.tsx:19:3
+./app/page.tsx:14:59
 Ecmascript file had an error
-  17 |   Search,
-  18 |   AlertCircle,
-> 19 |   FileText,
-     |   ^^^^^^^^
-  20 |   Globe,
-  21 |   ImageIcon,
-  22 | } from "lucide-react"; // Added ImageIcon
+  12 |   ImageIcon,
+  13 | } from "lucide-react";
+> 14 | import { BookOpen, Sparkles, MapPin, Search, AlertCircle, FileText, Globe, ImageIcon, Volume2, StopCircle } from "lucide-react";
+     |                                                           ^^^^^^^^
+  15 | import ReactMarkdown from "react-markdown";
+  16 | import remarkMath from "remark-math";
+  17 | import rehypeKatex from "rehype-katex";
 
 the name `FileText` is defined multiple times
 
@@ -69,15 +69,15 @@ Import traces:
 
 
 
-./app/page.tsx:20:3
+./app/page.tsx:14:69
 Ecmascript file had an error
-  18 |   AlertCircle,
-  19 |   FileText,
-> 20 |   Globe,
-     |   ^^^^^
-  21 |   ImageIcon,
-  22 | } from "lucide-react"; // Added ImageIcon
-  23 | import remarkMath from "remark-math";
+  12 |   ImageIcon,
+  13 | } from "lucide-react";
+> 14 | import { BookOpen, Sparkles, MapPin, Search, AlertCircle, FileText, Globe, ImageIcon, Volume2, StopCircle } from "lucide-react";
+     |                                                                     ^^^^^
+  15 | import ReactMarkdown from "react-markdown";
+  16 | import remarkMath from "remark-math";
+  17 | import rehypeKatex from "rehype-katex";
 
 the name `Globe` is defined multiple times
 
@@ -92,15 +92,38 @@ Import traces:
 
 
 
-./app/page.tsx:16:3
+./app/page.tsx:14:76
 Ecmascript file had an error
-  14 |   BookOpen,
-  15 |   Sparkles,
-> 16 |   MapPin,
-     |   ^^^^^^
-  17 |   Search,
-  18 |   AlertCircle,
-  19 |   FileText,
+  12 |   ImageIcon,
+  13 | } from "lucide-react";
+> 14 | import { BookOpen, Sparkles, MapPin, Search, AlertCircle, FileText, Globe, ImageIcon, Volume2, StopCircle } from "lucide-react";
+     |                                                                            ^^^^^^^^^
+  15 | import ReactMarkdown from "react-markdown";
+  16 | import remarkMath from "remark-math";
+  17 | import rehypeKatex from "rehype-katex";
+
+the name `ImageIcon` is defined multiple times
+
+Import traces:
+  Client Component Browser:
+    ./app/page.tsx [Client Component Browser]
+    ./app/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./app/page.tsx [Client Component SSR]
+    ./app/page.tsx [Server Component]
+
+
+
+./app/page.tsx:14:30
+Ecmascript file had an error
+  12 |   ImageIcon,
+  13 | } from "lucide-react";
+> 14 | import { BookOpen, Sparkles, MapPin, Search, AlertCircle, FileText, Globe, ImageIcon, Volume2, StopCircle } from "lucide-react";
+     |                              ^^^^^^
+  15 | import ReactMarkdown from "react-markdown";
+  16 | import remarkMath from "remark-math";
+  17 | import rehypeKatex from "rehype-katex";
 
 the name `MapPin` is defined multiple times
 
@@ -115,15 +138,15 @@ Import traces:
 
 
 
-./app/page.tsx:17:3
+./app/page.tsx:14:38
 Ecmascript file had an error
-  15 |   Sparkles,
-  16 |   MapPin,
-> 17 |   Search,
-     |   ^^^^^^
-  18 |   AlertCircle,
-  19 |   FileText,
-  20 |   Globe,
+  12 |   ImageIcon,
+  13 | } from "lucide-react";
+> 14 | import { BookOpen, Sparkles, MapPin, Search, AlertCircle, FileText, Globe, ImageIcon, Volume2, StopCircle } from "lucide-react";
+     |                                      ^^^^^^
+  15 | import ReactMarkdown from "react-markdown";
+  16 | import remarkMath from "remark-math";
+  17 | import rehypeKatex from "rehype-katex";
 
 the name `Search` is defined multiple times
 
@@ -138,15 +161,15 @@ Import traces:
 
 
 
-./app/page.tsx:15:3
+./app/page.tsx:14:20
 Ecmascript file had an error
-  13 | import {
-  14 |   BookOpen,
-> 15 |   Sparkles,
-     |   ^^^^^^^^
-  16 |   MapPin,
-  17 |   Search,
-  18 |   AlertCircle,
+  12 |   ImageIcon,
+  13 | } from "lucide-react";
+> 14 | import { BookOpen, Sparkles, MapPin, Search, AlertCircle, FileText, Globe, ImageIcon, Volume2, StopCircle } from "lucide-react";
+     |                    ^^^^^^^^
+  15 | import ReactMarkdown from "react-markdown";
+  16 | import remarkMath from "remark-math";
+  17 | import rehypeKatex from "rehype-katex";
 
 the name `Sparkles` is defined multiple times
 
@@ -160,15 +183,16 @@ Import traces:
     ./app/page.tsx [Server Component]
 
 
-[00:00:23.302] Browser ERROR   uncaughtError: Error: ./app/page.tsx:18:3
+[00:00:40.006] Server  LOG      ○ Compiling /_error ...
+[00:00:50.183] Browser ERROR   uncaughtError: Error: ./app/page.tsx:14:46
 Ecmascript file had an error
-  16 |   MapPin,
-  17 |   Search,
-> 18 |   AlertCircle,
-     |   ^^^^^^^^^^^
-  19 |   FileText,
-  20 |   Globe,
-  21 |   ImageIcon,
+  12 |   ImageIcon,
+  13 | } from "lucide-react";
+> 14 | import { BookOpen, Sparkles, MapPin, Search, AlertCircle, FileText, Globe, ImageIcon, Volume2, StopCircle } from "lucide-react";
+     |                                              ^^^^^^^^^^^
+  15 | import ReactMarkdown from "react-markdown";
+  16 | import remarkMath from "remark-math";
+  17 | import rehypeKatex from "rehype-katex";
 
 the name `AlertCircle` is defined multiple times
 
@@ -182,15 +206,15 @@ Import traces:
     ./app/page.tsx [Server Component]
 
 
-[00:00:23.807] Browser ERROR   ./app/page.tsx:18:3
+[00:00:51.929] Browser ERROR   ./app/page.tsx:14:46
 Ecmascript file had an error
-  16 |   MapPin,
-  17 |   Search,
-> 18 |   AlertCircle,
-     |   ^^^^^^^^^^^
-  19 |   FileText,
-  20 |   Globe,
-  21 |   ImageIcon,
+  12 |   ImageIcon,
+  13 | } from "lucide-react";
+> 14 | import { BookOpen, Sparkles, MapPin, Search, AlertCircle, FileText, Globe, ImageIcon, Volume2, StopCircle } from "lucide-react";
+     |                                              ^^^^^^^^^^^
+  15 | import ReactMarkdown from "react-markdown";
+  16 | import remarkMath from "remark-math";
+  17 | import rehypeKatex from "rehype-katex";
 
 the name `AlertCircle` is defined multiple times
 
@@ -202,15 +226,15 @@ Import traces:
   Client Component SSR:
     ./app/page.tsx [Client Component SSR]
     ./app/page.tsx [Server Component]
-[00:00:23.807] Browser ERROR   ./app/page.tsx:14:3
+[00:00:51.930] Browser ERROR   ./app/page.tsx:14:10
 Ecmascript file had an error
-  12 | import ReactMarkdown from "react-markdown";
-  13 | import {
-> 14 |   BookOpen,
-     |   ^^^^^^^^
-  15 |   Sparkles,
-  16 |   MapPin,
-  17 |   Search,
+  12 |   ImageIcon,
+  13 | } from "lucide-react";
+> 14 | import { BookOpen, Sparkles, MapPin, Search, AlertCircle, FileText, Globe, ImageIcon, Volume2, StopCircle } from "lucide-react";
+     |          ^^^^^^^^
+  15 | import ReactMarkdown from "react-markdown";
+  16 | import remarkMath from "remark-math";
+  17 | import rehypeKatex from "rehype-katex";
 
 the name `BookOpen` is defined multiple times
 
@@ -222,15 +246,15 @@ Import traces:
   Client Component SSR:
     ./app/page.tsx [Client Component SSR]
     ./app/page.tsx [Server Component]
-[00:00:23.807] Browser ERROR   ./app/page.tsx:19:3
+[00:00:51.930] Browser ERROR   ./app/page.tsx:14:59
 Ecmascript file had an error
-  17 |   Search,
-  18 |   AlertCircle,
-> 19 |   FileText,
-     |   ^^^^^^^^
-  20 |   Globe,
-  21 |   ImageIcon,
-  22 | } from "lucide-react"; // Added ImageIcon
+  12 |   ImageIcon,
+  13 | } from "lucide-react";
+> 14 | import { BookOpen, Sparkles, MapPin, Search, AlertCircle, FileText, Globe, ImageIcon, Volume2, StopCircle } from "lucide-react";
+     |                                                           ^^^^^^^^
+  15 | import ReactMarkdown from "react-markdown";
+  16 | import remarkMath from "remark-math";
+  17 | import rehypeKatex from "rehype-katex";
 
 the name `FileText` is defined multiple times
 
@@ -242,15 +266,15 @@ Import traces:
   Client Component SSR:
     ./app/page.tsx [Client Component SSR]
     ./app/page.tsx [Server Component]
-[00:00:23.807] Browser ERROR   ./app/page.tsx:20:3
+[00:00:51.930] Browser ERROR   ./app/page.tsx:14:69
 Ecmascript file had an error
-  18 |   AlertCircle,
-  19 |   FileText,
-> 20 |   Globe,
-     |   ^^^^^
-  21 |   ImageIcon,
-  22 | } from "lucide-react"; // Added ImageIcon
-  23 | import remarkMath from "remark-math";
+  12 |   ImageIcon,
+  13 | } from "lucide-react";
+> 14 | import { BookOpen, Sparkles, MapPin, Search, AlertCircle, FileText, Globe, ImageIcon, Volume2, StopCircle } from "lucide-react";
+     |                                                                     ^^^^^
+  15 | import ReactMarkdown from "react-markdown";
+  16 | import remarkMath from "remark-math";
+  17 | import rehypeKatex from "rehype-katex";
 
 the name `Globe` is defined multiple times
 
@@ -262,15 +286,35 @@ Import traces:
   Client Component SSR:
     ./app/page.tsx [Client Component SSR]
     ./app/page.tsx [Server Component]
-[00:00:23.807] Browser ERROR   ./app/page.tsx:16:3
+[00:00:51.930] Browser ERROR   ./app/page.tsx:14:76
 Ecmascript file had an error
-  14 |   BookOpen,
-  15 |   Sparkles,
-> 16 |   MapPin,
-     |   ^^^^^^
-  17 |   Search,
-  18 |   AlertCircle,
-  19 |   FileText,
+  12 |   ImageIcon,
+  13 | } from "lucide-react";
+> 14 | import { BookOpen, Sparkles, MapPin, Search, AlertCircle, FileText, Globe, ImageIcon, Volume2, StopCircle } from "lucide-react";
+     |                                                                            ^^^^^^^^^
+  15 | import ReactMarkdown from "react-markdown";
+  16 | import remarkMath from "remark-math";
+  17 | import rehypeKatex from "rehype-katex";
+
+the name `ImageIcon` is defined multiple times
+
+Import traces:
+  Client Component Browser:
+    ./app/page.tsx [Client Component Browser]
+    ./app/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./app/page.tsx [Client Component SSR]
+    ./app/page.tsx [Server Component]
+[00:00:51.968] Browser ERROR   ./app/page.tsx:14:30
+Ecmascript file had an error
+  12 |   ImageIcon,
+  13 | } from "lucide-react";
+> 14 | import { BookOpen, Sparkles, MapPin, Search, AlertCircle, FileText, Globe, ImageIcon, Volume2, StopCircle } from "lucide-react";
+     |                              ^^^^^^
+  15 | import ReactMarkdown from "react-markdown";
+  16 | import remarkMath from "remark-math";
+  17 | import rehypeKatex from "rehype-katex";
 
 the name `MapPin` is defined multiple times
 
@@ -282,15 +326,15 @@ Import traces:
   Client Component SSR:
     ./app/page.tsx [Client Component SSR]
     ./app/page.tsx [Server Component]
-[00:00:23.808] Browser ERROR   ./app/page.tsx:17:3
+[00:00:51.968] Browser ERROR   ./app/page.tsx:14:38
 Ecmascript file had an error
-  15 |   Sparkles,
-  16 |   MapPin,
-> 17 |   Search,
-     |   ^^^^^^
-  18 |   AlertCircle,
-  19 |   FileText,
-  20 |   Globe,
+  12 |   ImageIcon,
+  13 | } from "lucide-react";
+> 14 | import { BookOpen, Sparkles, MapPin, Search, AlertCircle, FileText, Globe, ImageIcon, Volume2, StopCircle } from "lucide-react";
+     |                                      ^^^^^^
+  15 | import ReactMarkdown from "react-markdown";
+  16 | import remarkMath from "remark-math";
+  17 | import rehypeKatex from "rehype-katex";
 
 the name `Search` is defined multiple times
 
@@ -302,15 +346,15 @@ Import traces:
   Client Component SSR:
     ./app/page.tsx [Client Component SSR]
     ./app/page.tsx [Server Component]
-[00:00:23.808] Browser ERROR   ./app/page.tsx:15:3
+[00:00:51.968] Browser ERROR   ./app/page.tsx:14:20
 Ecmascript file had an error
-  13 | import {
-  14 |   BookOpen,
-> 15 |   Sparkles,
-     |   ^^^^^^^^
-  16 |   MapPin,
-  17 |   Search,
-  18 |   AlertCircle,
+  12 |   ImageIcon,
+  13 | } from "lucide-react";
+> 14 | import { BookOpen, Sparkles, MapPin, Search, AlertCircle, FileText, Globe, ImageIcon, Volume2, StopCircle } from "lucide-react";
+     |                    ^^^^^^^^
+  15 | import ReactMarkdown from "react-markdown";
+  16 | import remarkMath from "remark-math";
+  17 | import rehypeKatex from "rehype-katex";
 
 the name `Sparkles` is defined multiple times
 
@@ -322,15 +366,15 @@ Import traces:
   Client Component SSR:
     ./app/page.tsx [Client Component SSR]
     ./app/page.tsx [Server Component]
-[00:00:24.146] Browser ERROR   ./app/page.tsx:18:3
+[00:00:51.968] Browser ERROR   ./app/page.tsx:14:46
 Ecmascript file had an error
-  16 |   MapPin,
-  17 |   Search,
-> 18 |   AlertCircle,
-     |   ^^^^^^^^^^^
-  19 |   FileText,
-  20 |   Globe,
-  21 |   ImageIcon,
+  12 |   ImageIcon,
+  13 | } from "lucide-react";
+> 14 | import { BookOpen, Sparkles, MapPin, Search, AlertCircle, FileText, Globe, ImageIcon, Volume2, StopCircle } from "lucide-react";
+     |                                              ^^^^^^^^^^^
+  15 | import ReactMarkdown from "react-markdown";
+  16 | import remarkMath from "remark-math";
+  17 | import rehypeKatex from "rehype-katex";
 
 the name `AlertCircle` is defined multiple times
 
@@ -342,15 +386,15 @@ Import traces:
   Client Component SSR:
     ./app/page.tsx [Client Component SSR]
     ./app/page.tsx [Server Component]
-[00:00:24.146] Browser ERROR   ./app/page.tsx:14:3
+[00:00:51.968] Browser ERROR   ./app/page.tsx:14:10
 Ecmascript file had an error
-  12 | import ReactMarkdown from "react-markdown";
-  13 | import {
-> 14 |   BookOpen,
-     |   ^^^^^^^^
-  15 |   Sparkles,
-  16 |   MapPin,
-  17 |   Search,
+  12 |   ImageIcon,
+  13 | } from "lucide-react";
+> 14 | import { BookOpen, Sparkles, MapPin, Search, AlertCircle, FileText, Globe, ImageIcon, Volume2, StopCircle } from "lucide-react";
+     |          ^^^^^^^^
+  15 | import ReactMarkdown from "react-markdown";
+  16 | import remarkMath from "remark-math";
+  17 | import rehypeKatex from "rehype-katex";
 
 the name `BookOpen` is defined multiple times
 
@@ -362,15 +406,15 @@ Import traces:
   Client Component SSR:
     ./app/page.tsx [Client Component SSR]
     ./app/page.tsx [Server Component]
-[00:00:24.146] Browser ERROR   ./app/page.tsx:19:3
+[00:00:51.968] Browser ERROR   ./app/page.tsx:14:59
 Ecmascript file had an error
-  17 |   Search,
-  18 |   AlertCircle,
-> 19 |   FileText,
-     |   ^^^^^^^^
-  20 |   Globe,
-  21 |   ImageIcon,
-  22 | } from "lucide-react"; // Added ImageIcon
+  12 |   ImageIcon,
+  13 | } from "lucide-react";
+> 14 | import { BookOpen, Sparkles, MapPin, Search, AlertCircle, FileText, Globe, ImageIcon, Volume2, StopCircle } from "lucide-react";
+     |                                                           ^^^^^^^^
+  15 | import ReactMarkdown from "react-markdown";
+  16 | import remarkMath from "remark-math";
+  17 | import rehypeKatex from "rehype-katex";
 
 the name `FileText` is defined multiple times
 
@@ -382,15 +426,15 @@ Import traces:
   Client Component SSR:
     ./app/page.tsx [Client Component SSR]
     ./app/page.tsx [Server Component]
-[00:00:24.146] Browser ERROR   ./app/page.tsx:20:3
+[00:00:51.968] Browser ERROR   ./app/page.tsx:14:69
 Ecmascript file had an error
-  18 |   AlertCircle,
-  19 |   FileText,
-> 20 |   Globe,
-     |   ^^^^^
-  21 |   ImageIcon,
-  22 | } from "lucide-react"; // Added ImageIcon
-  23 | import remarkMath from "remark-math";
+  12 |   ImageIcon,
+  13 | } from "lucide-react";
+> 14 | import { BookOpen, Sparkles, MapPin, Search, AlertCircle, FileText, Globe, ImageIcon, Volume2, StopCircle } from "lucide-react";
+     |                                                                     ^^^^^
+  15 | import ReactMarkdown from "react-markdown";
+  16 | import remarkMath from "remark-math";
+  17 | import rehypeKatex from "rehype-katex";
 
 the name `Globe` is defined multiple times
 
@@ -402,15 +446,35 @@ Import traces:
   Client Component SSR:
     ./app/page.tsx [Client Component SSR]
     ./app/page.tsx [Server Component]
-[00:00:24.146] Browser ERROR   ./app/page.tsx:16:3
+[00:00:51.968] Browser ERROR   ./app/page.tsx:14:76
 Ecmascript file had an error
-  14 |   BookOpen,
-  15 |   Sparkles,
-> 16 |   MapPin,
-     |   ^^^^^^
-  17 |   Search,
-  18 |   AlertCircle,
-  19 |   FileText,
+  12 |   ImageIcon,
+  13 | } from "lucide-react";
+> 14 | import { BookOpen, Sparkles, MapPin, Search, AlertCircle, FileText, Globe, ImageIcon, Volume2, StopCircle } from "lucide-react";
+     |                                                                            ^^^^^^^^^
+  15 | import ReactMarkdown from "react-markdown";
+  16 | import remarkMath from "remark-math";
+  17 | import rehypeKatex from "rehype-katex";
+
+the name `ImageIcon` is defined multiple times
+
+Import traces:
+  Client Component Browser:
+    ./app/page.tsx [Client Component Browser]
+    ./app/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./app/page.tsx [Client Component SSR]
+    ./app/page.tsx [Server Component]
+[00:00:51.968] Browser ERROR   ./app/page.tsx:14:30
+Ecmascript file had an error
+  12 |   ImageIcon,
+  13 | } from "lucide-react";
+> 14 | import { BookOpen, Sparkles, MapPin, Search, AlertCircle, FileText, Globe, ImageIcon, Volume2, StopCircle } from "lucide-react";
+     |                              ^^^^^^
+  15 | import ReactMarkdown from "react-markdown";
+  16 | import remarkMath from "remark-math";
+  17 | import rehypeKatex from "rehype-katex";
 
 the name `MapPin` is defined multiple times
 
@@ -422,15 +486,15 @@ Import traces:
   Client Component SSR:
     ./app/page.tsx [Client Component SSR]
     ./app/page.tsx [Server Component]
-[00:00:24.146] Browser ERROR   ./app/page.tsx:17:3
+[00:00:51.968] Browser ERROR   ./app/page.tsx:14:38
 Ecmascript file had an error
-  15 |   Sparkles,
-  16 |   MapPin,
-> 17 |   Search,
-     |   ^^^^^^
-  18 |   AlertCircle,
-  19 |   FileText,
-  20 |   Globe,
+  12 |   ImageIcon,
+  13 | } from "lucide-react";
+> 14 | import { BookOpen, Sparkles, MapPin, Search, AlertCircle, FileText, Globe, ImageIcon, Volume2, StopCircle } from "lucide-react";
+     |                                      ^^^^^^
+  15 | import ReactMarkdown from "react-markdown";
+  16 | import remarkMath from "remark-math";
+  17 | import rehypeKatex from "rehype-katex";
 
 the name `Search` is defined multiple times
 
@@ -442,15 +506,15 @@ Import traces:
   Client Component SSR:
     ./app/page.tsx [Client Component SSR]
     ./app/page.tsx [Server Component]
-[00:00:24.146] Browser ERROR   ./app/page.tsx:15:3
+[00:00:51.968] Browser ERROR   ./app/page.tsx:14:20
 Ecmascript file had an error
-  13 | import {
-  14 |   BookOpen,
-> 15 |   Sparkles,
-     |   ^^^^^^^^
-  16 |   MapPin,
-  17 |   Search,
-  18 |   AlertCircle,
+  12 |   ImageIcon,
+  13 | } from "lucide-react";
+> 14 | import { BookOpen, Sparkles, MapPin, Search, AlertCircle, FileText, Globe, ImageIcon, Volume2, StopCircle } from "lucide-react";
+     |                    ^^^^^^^^
+  15 | import ReactMarkdown from "react-markdown";
+  16 | import remarkMath from "remark-math";
+  17 | import rehypeKatex from "rehype-katex";
 
 the name `Sparkles` is defined multiple times
 
@@ -462,15 +526,15 @@ Import traces:
   Client Component SSR:
     ./app/page.tsx [Client Component SSR]
     ./app/page.tsx [Server Component]
-[00:00:45.860] Server  ERROR    ⨯ ./app/page.tsx:18:3
+[00:00:52.366] Browser ERROR   ./app/page.tsx:14:46
 Ecmascript file had an error
-  16 |   MapPin,
-  17 |   Search,
-> 18 |   AlertCircle,
-     |   ^^^^^^^^^^^
-  19 |   FileText,
-  20 |   Globe,
-  21 |   ImageIcon,
+  12 |   ImageIcon,
+  13 | } from "lucide-react";
+> 14 | import { BookOpen, Sparkles, MapPin, Search, AlertCircle, FileText, Globe, ImageIcon, Volume2, StopCircle } from "lucide-react";
+     |                                              ^^^^^^^^^^^
+  15 | import ReactMarkdown from "react-markdown";
+  16 | import remarkMath from "remark-math";
+  17 | import rehypeKatex from "rehype-katex";
 
 the name `AlertCircle` is defined multiple times
 
@@ -482,18 +546,15 @@ Import traces:
   Client Component SSR:
     ./app/page.tsx [Client Component SSR]
     ./app/page.tsx [Server Component]
-
-
-
-./app/page.tsx:14:3
+[00:00:52.366] Browser ERROR   ./app/page.tsx:14:10
 Ecmascript file had an error
-  12 | import ReactMarkdown from "react-markdown";
-  13 | import {
-> 14 |   BookOpen,
-     |   ^^^^^^^^
-  15 |   Sparkles,
-  16 |   MapPin,
-  17 |   Search,
+  12 |   ImageIcon,
+  13 | } from "lucide-react";
+> 14 | import { BookOpen, Sparkles, MapPin, Search, AlertCircle, FileText, Globe, ImageIcon, Volume2, StopCircle } from "lucide-react";
+     |          ^^^^^^^^
+  15 | import ReactMarkdown from "react-markdown";
+  16 | import remarkMath from "remark-math";
+  17 | import rehypeKatex from "rehype-katex";
 
 the name `BookOpen` is defined multiple times
 
@@ -505,18 +566,15 @@ Import traces:
   Client Component SSR:
     ./app/page.tsx [Client Component SSR]
     ./app/page.tsx [Server Component]
-
-
-
-./app/page.tsx:19:3
+[00:00:52.366] Browser ERROR   ./app/page.tsx:14:59
 Ecmascript file had an error
-  17 |   Search,
-  18 |   AlertCircle,
-> 19 |   FileText,
-     |   ^^^^^^^^
-  20 |   Globe,
-  21 |   ImageIcon,
-  22 | } from "lucide-react"; // Added ImageIcon
+  12 |   ImageIcon,
+  13 | } from "lucide-react";
+> 14 | import { BookOpen, Sparkles, MapPin, Search, AlertCircle, FileText, Globe, ImageIcon, Volume2, StopCircle } from "lucide-react";
+     |                                                           ^^^^^^^^
+  15 | import ReactMarkdown from "react-markdown";
+  16 | import remarkMath from "remark-math";
+  17 | import rehypeKatex from "rehype-katex";
 
 the name `FileText` is defined multiple times
 
@@ -528,18 +586,15 @@ Import traces:
   Client Component SSR:
     ./app/page.tsx [Client Component SSR]
     ./app/page.tsx [Server Component]
-
-
-
-./app/page.tsx:20:3
+[00:00:52.366] Browser ERROR   ./app/page.tsx:14:69
 Ecmascript file had an error
-  18 |   AlertCircle,
-  19 |   FileText,
-> 20 |   Globe,
-     |   ^^^^^
-  21 |   ImageIcon,
-  22 | } from "lucide-react"; // Added ImageIcon
-  23 | import remarkMath from "remark-math";
+  12 |   ImageIcon,
+  13 | } from "lucide-react";
+> 14 | import { BookOpen, Sparkles, MapPin, Search, AlertCircle, FileText, Globe, ImageIcon, Volume2, StopCircle } from "lucide-react";
+     |                                                                     ^^^^^
+  15 | import ReactMarkdown from "react-markdown";
+  16 | import remarkMath from "remark-math";
+  17 | import rehypeKatex from "rehype-katex";
 
 the name `Globe` is defined multiple times
 
@@ -551,18 +606,35 @@ Import traces:
   Client Component SSR:
     ./app/page.tsx [Client Component SSR]
     ./app/page.tsx [Server Component]
-
-
-
-./app/page.tsx:16:3
+[00:00:52.366] Browser ERROR   ./app/page.tsx:14:76
 Ecmascript file had an error
-  14 |   BookOpen,
-  15 |   Sparkles,
-> 16 |   MapPin,
-     |   ^^^^^^
-  17 |   Search,
-  18 |   AlertCircle,
-  19 |   FileText,
+  12 |   ImageIcon,
+  13 | } from "lucide-react";
+> 14 | import { BookOpen, Sparkles, MapPin, Search, AlertCircle, FileText, Globe, ImageIcon, Volume2, StopCircle } from "lucide-react";
+     |                                                                            ^^^^^^^^^
+  15 | import ReactMarkdown from "react-markdown";
+  16 | import remarkMath from "remark-math";
+  17 | import rehypeKatex from "rehype-katex";
+
+the name `ImageIcon` is defined multiple times
+
+Import traces:
+  Client Component Browser:
+    ./app/page.tsx [Client Component Browser]
+    ./app/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./app/page.tsx [Client Component SSR]
+    ./app/page.tsx [Server Component]
+[00:00:52.367] Browser ERROR   ./app/page.tsx:14:30
+Ecmascript file had an error
+  12 |   ImageIcon,
+  13 | } from "lucide-react";
+> 14 | import { BookOpen, Sparkles, MapPin, Search, AlertCircle, FileText, Globe, ImageIcon, Volume2, StopCircle } from "lucide-react";
+     |                              ^^^^^^
+  15 | import ReactMarkdown from "react-markdown";
+  16 | import remarkMath from "remark-math";
+  17 | import rehypeKatex from "rehype-katex";
 
 the name `MapPin` is defined multiple times
 
@@ -574,18 +646,15 @@ Import traces:
   Client Component SSR:
     ./app/page.tsx [Client Component SSR]
     ./app/page.tsx [Server Component]
-
-
-
-./app/page.tsx:17:3
+[00:00:52.367] Browser ERROR   ./app/page.tsx:14:38
 Ecmascript file had an error
-  15 |   Sparkles,
-  16 |   MapPin,
-> 17 |   Search,
-     |   ^^^^^^
-  18 |   AlertCircle,
-  19 |   FileText,
-  20 |   Globe,
+  12 |   ImageIcon,
+  13 | } from "lucide-react";
+> 14 | import { BookOpen, Sparkles, MapPin, Search, AlertCircle, FileText, Globe, ImageIcon, Volume2, StopCircle } from "lucide-react";
+     |                                      ^^^^^^
+  15 | import ReactMarkdown from "react-markdown";
+  16 | import remarkMath from "remark-math";
+  17 | import rehypeKatex from "rehype-katex";
 
 the name `Search` is defined multiple times
 
@@ -597,18 +666,15 @@ Import traces:
   Client Component SSR:
     ./app/page.tsx [Client Component SSR]
     ./app/page.tsx [Server Component]
-
-
-
-./app/page.tsx:15:3
+[00:00:52.367] Browser ERROR   ./app/page.tsx:14:20
 Ecmascript file had an error
-  13 | import {
-  14 |   BookOpen,
-> 15 |   Sparkles,
-     |   ^^^^^^^^
-  16 |   MapPin,
-  17 |   Search,
-  18 |   AlertCircle,
+  12 |   ImageIcon,
+  13 | } from "lucide-react";
+> 14 | import { BookOpen, Sparkles, MapPin, Search, AlertCircle, FileText, Globe, ImageIcon, Volume2, StopCircle } from "lucide-react";
+     |                    ^^^^^^^^
+  15 | import ReactMarkdown from "react-markdown";
+  16 | import remarkMath from "remark-math";
+  17 | import rehypeKatex from "rehype-katex";
 
 the name `Sparkles` is defined multiple times
 
@@ -620,1190 +686,5 @@ Import traces:
   Client Component SSR:
     ./app/page.tsx [Client Component SSR]
     ./app/page.tsx [Server Component]
-
-
-[00:00:46.515] Browser ERROR   uncaughtError: Error: ./app/page.tsx:18:3
-Ecmascript file had an error
-  16 |   MapPin,
-  17 |   Search,
-> 18 |   AlertCircle,
-     |   ^^^^^^^^^^^
-  19 |   FileText,
-  20 |   Globe,
-  21 |   ImageIcon,
-
-the name `AlertCircle` is defined multiple times
-
-Import traces:
-  Client Component Browser:
-    ./app/page.tsx [Client Component Browser]
-    ./app/page.tsx [Server Component]
-
-  Client Component SSR:
-    ./app/page.tsx [Client Component SSR]
-    ./app/page.tsx [Server Component]
-
-
-[00:00:47.005] Browser ERROR   ./app/page.tsx:18:3
-Ecmascript file had an error
-  16 |   MapPin,
-  17 |   Search,
-> 18 |   AlertCircle,
-     |   ^^^^^^^^^^^
-  19 |   FileText,
-  20 |   Globe,
-  21 |   ImageIcon,
-
-the name `AlertCircle` is defined multiple times
-
-Import traces:
-  Client Component Browser:
-    ./app/page.tsx [Client Component Browser]
-    ./app/page.tsx [Server Component]
-
-  Client Component SSR:
-    ./app/page.tsx [Client Component SSR]
-    ./app/page.tsx [Server Component]
-[00:00:47.005] Browser ERROR   ./app/page.tsx:14:3
-Ecmascript file had an error
-  12 | import ReactMarkdown from "react-markdown";
-  13 | import {
-> 14 |   BookOpen,
-     |   ^^^^^^^^
-  15 |   Sparkles,
-  16 |   MapPin,
-  17 |   Search,
-
-the name `BookOpen` is defined multiple times
-
-Import traces:
-  Client Component Browser:
-    ./app/page.tsx [Client Component Browser]
-    ./app/page.tsx [Server Component]
-
-  Client Component SSR:
-    ./app/page.tsx [Client Component SSR]
-    ./app/page.tsx [Server Component]
-[00:00:47.005] Browser ERROR   ./app/page.tsx:19:3
-Ecmascript file had an error
-  17 |   Search,
-  18 |   AlertCircle,
-> 19 |   FileText,
-     |   ^^^^^^^^
-  20 |   Globe,
-  21 |   ImageIcon,
-  22 | } from "lucide-react"; // Added ImageIcon
-
-the name `FileText` is defined multiple times
-
-Import traces:
-  Client Component Browser:
-    ./app/page.tsx [Client Component Browser]
-    ./app/page.tsx [Server Component]
-
-  Client Component SSR:
-    ./app/page.tsx [Client Component SSR]
-    ./app/page.tsx [Server Component]
-[00:00:47.005] Browser ERROR   ./app/page.tsx:20:3
-Ecmascript file had an error
-  18 |   AlertCircle,
-  19 |   FileText,
-> 20 |   Globe,
-     |   ^^^^^
-  21 |   ImageIcon,
-  22 | } from "lucide-react"; // Added ImageIcon
-  23 | import remarkMath from "remark-math";
-
-the name `Globe` is defined multiple times
-
-Import traces:
-  Client Component Browser:
-    ./app/page.tsx [Client Component Browser]
-    ./app/page.tsx [Server Component]
-
-  Client Component SSR:
-    ./app/page.tsx [Client Component SSR]
-    ./app/page.tsx [Server Component]
-[00:00:47.005] Browser ERROR   ./app/page.tsx:16:3
-Ecmascript file had an error
-  14 |   BookOpen,
-  15 |   Sparkles,
-> 16 |   MapPin,
-     |   ^^^^^^
-  17 |   Search,
-  18 |   AlertCircle,
-  19 |   FileText,
-
-the name `MapPin` is defined multiple times
-
-Import traces:
-  Client Component Browser:
-    ./app/page.tsx [Client Component Browser]
-    ./app/page.tsx [Server Component]
-
-  Client Component SSR:
-    ./app/page.tsx [Client Component SSR]
-    ./app/page.tsx [Server Component]
-[00:00:47.005] Browser ERROR   ./app/page.tsx:17:3
-Ecmascript file had an error
-  15 |   Sparkles,
-  16 |   MapPin,
-> 17 |   Search,
-     |   ^^^^^^
-  18 |   AlertCircle,
-  19 |   FileText,
-  20 |   Globe,
-
-the name `Search` is defined multiple times
-
-Import traces:
-  Client Component Browser:
-    ./app/page.tsx [Client Component Browser]
-    ./app/page.tsx [Server Component]
-
-  Client Component SSR:
-    ./app/page.tsx [Client Component SSR]
-    ./app/page.tsx [Server Component]
-[00:00:47.007] Browser ERROR   ./app/page.tsx:15:3
-Ecmascript file had an error
-  13 | import {
-  14 |   BookOpen,
-> 15 |   Sparkles,
-     |   ^^^^^^^^
-  16 |   MapPin,
-  17 |   Search,
-  18 |   AlertCircle,
-
-the name `Sparkles` is defined multiple times
-
-Import traces:
-  Client Component Browser:
-    ./app/page.tsx [Client Component Browser]
-    ./app/page.tsx [Server Component]
-
-  Client Component SSR:
-    ./app/page.tsx [Client Component SSR]
-    ./app/page.tsx [Server Component]
-[00:00:47.164] Browser ERROR   ./app/page.tsx:18:3
-Ecmascript file had an error
-  16 |   MapPin,
-  17 |   Search,
-> 18 |   AlertCircle,
-     |   ^^^^^^^^^^^
-  19 |   FileText,
-  20 |   Globe,
-  21 |   ImageIcon,
-
-the name `AlertCircle` is defined multiple times
-
-Import traces:
-  Client Component Browser:
-    ./app/page.tsx [Client Component Browser]
-    ./app/page.tsx [Server Component]
-
-  Client Component SSR:
-    ./app/page.tsx [Client Component SSR]
-    ./app/page.tsx [Server Component]
-[00:00:47.164] Browser ERROR   ./app/page.tsx:14:3
-Ecmascript file had an error
-  12 | import ReactMarkdown from "react-markdown";
-  13 | import {
-> 14 |   BookOpen,
-     |   ^^^^^^^^
-  15 |   Sparkles,
-  16 |   MapPin,
-  17 |   Search,
-
-the name `BookOpen` is defined multiple times
-
-Import traces:
-  Client Component Browser:
-    ./app/page.tsx [Client Component Browser]
-    ./app/page.tsx [Server Component]
-
-  Client Component SSR:
-    ./app/page.tsx [Client Component SSR]
-    ./app/page.tsx [Server Component]
-[00:00:47.164] Browser ERROR   ./app/page.tsx:19:3
-Ecmascript file had an error
-  17 |   Search,
-  18 |   AlertCircle,
-> 19 |   FileText,
-     |   ^^^^^^^^
-  20 |   Globe,
-  21 |   ImageIcon,
-  22 | } from "lucide-react"; // Added ImageIcon
-
-the name `FileText` is defined multiple times
-
-Import traces:
-  Client Component Browser:
-    ./app/page.tsx [Client Component Browser]
-    ./app/page.tsx [Server Component]
-
-  Client Component SSR:
-    ./app/page.tsx [Client Component SSR]
-    ./app/page.tsx [Server Component]
-[00:00:47.164] Browser ERROR   ./app/page.tsx:20:3
-Ecmascript file had an error
-  18 |   AlertCircle,
-  19 |   FileText,
-> 20 |   Globe,
-     |   ^^^^^
-  21 |   ImageIcon,
-  22 | } from "lucide-react"; // Added ImageIcon
-  23 | import remarkMath from "remark-math";
-
-the name `Globe` is defined multiple times
-
-Import traces:
-  Client Component Browser:
-    ./app/page.tsx [Client Component Browser]
-    ./app/page.tsx [Server Component]
-
-  Client Component SSR:
-    ./app/page.tsx [Client Component SSR]
-    ./app/page.tsx [Server Component]
-[00:00:47.164] Browser ERROR   ./app/page.tsx:16:3
-Ecmascript file had an error
-  14 |   BookOpen,
-  15 |   Sparkles,
-> 16 |   MapPin,
-     |   ^^^^^^
-  17 |   Search,
-  18 |   AlertCircle,
-  19 |   FileText,
-
-the name `MapPin` is defined multiple times
-
-Import traces:
-  Client Component Browser:
-    ./app/page.tsx [Client Component Browser]
-    ./app/page.tsx [Server Component]
-
-  Client Component SSR:
-    ./app/page.tsx [Client Component SSR]
-    ./app/page.tsx [Server Component]
-[00:00:47.164] Browser ERROR   ./app/page.tsx:17:3
-Ecmascript file had an error
-  15 |   Sparkles,
-  16 |   MapPin,
-> 17 |   Search,
-     |   ^^^^^^
-  18 |   AlertCircle,
-  19 |   FileText,
-  20 |   Globe,
-
-the name `Search` is defined multiple times
-
-Import traces:
-  Client Component Browser:
-    ./app/page.tsx [Client Component Browser]
-    ./app/page.tsx [Server Component]
-
-  Client Component SSR:
-    ./app/page.tsx [Client Component SSR]
-    ./app/page.tsx [Server Component]
-[00:00:47.164] Browser ERROR   ./app/page.tsx:15:3
-Ecmascript file had an error
-  13 | import {
-  14 |   BookOpen,
-> 15 |   Sparkles,
-     |   ^^^^^^^^
-  16 |   MapPin,
-  17 |   Search,
-  18 |   AlertCircle,
-
-the name `Sparkles` is defined multiple times
-
-Import traces:
-  Client Component Browser:
-    ./app/page.tsx [Client Component Browser]
-    ./app/page.tsx [Server Component]
-
-  Client Component SSR:
-    ./app/page.tsx [Client Component SSR]
-    ./app/page.tsx [Server Component]
-[00:04:33.508] Browser ERROR   ./app/page.tsx:18:3
-Ecmascript file had an error
-  16 |   MapPin,
-  17 |   Search,
-> 18 |   AlertCircle,
-     |   ^^^^^^^^^^^
-  19 |   FileText,
-  20 |   Globe,
-  21 |   ImageIcon,
-
-the name `AlertCircle` is defined multiple times
-
-Import traces:
-  Client Component Browser:
-    ./app/page.tsx [Client Component Browser]
-    ./app/page.tsx [Server Component]
-
-  Client Component SSR:
-    ./app/page.tsx [Client Component SSR]
-    ./app/page.tsx [Server Component]
-[00:04:33.508] Browser ERROR   ./app/page.tsx:14:3
-Ecmascript file had an error
-  12 | import ReactMarkdown from "react-markdown";
-  13 | import {
-> 14 |   BookOpen,
-     |   ^^^^^^^^
-  15 |   Sparkles,
-  16 |   MapPin,
-  17 |   Search,
-
-the name `BookOpen` is defined multiple times
-
-Import traces:
-  Client Component Browser:
-    ./app/page.tsx [Client Component Browser]
-    ./app/page.tsx [Server Component]
-
-  Client Component SSR:
-    ./app/page.tsx [Client Component SSR]
-    ./app/page.tsx [Server Component]
-[00:04:33.508] Browser ERROR   ./app/page.tsx:19:3
-Ecmascript file had an error
-  17 |   Search,
-  18 |   AlertCircle,
-> 19 |   FileText,
-     |   ^^^^^^^^
-  20 |   Globe,
-  21 |   ImageIcon,
-  22 | } from "lucide-react"; // Added ImageIcon
-
-the name `FileText` is defined multiple times
-
-Import traces:
-  Client Component Browser:
-    ./app/page.tsx [Client Component Browser]
-    ./app/page.tsx [Server Component]
-
-  Client Component SSR:
-    ./app/page.tsx [Client Component SSR]
-    ./app/page.tsx [Server Component]
-[00:04:33.508] Browser ERROR   ./app/page.tsx:20:3
-Ecmascript file had an error
-  18 |   AlertCircle,
-  19 |   FileText,
-> 20 |   Globe,
-     |   ^^^^^
-  21 |   ImageIcon,
-  22 | } from "lucide-react"; // Added ImageIcon
-  23 | import remarkMath from "remark-math";
-
-the name `Globe` is defined multiple times
-
-Import traces:
-  Client Component Browser:
-    ./app/page.tsx [Client Component Browser]
-    ./app/page.tsx [Server Component]
-
-  Client Component SSR:
-    ./app/page.tsx [Client Component SSR]
-    ./app/page.tsx [Server Component]
-[00:04:33.508] Browser ERROR   ./app/page.tsx:16:3
-Ecmascript file had an error
-  14 |   BookOpen,
-  15 |   Sparkles,
-> 16 |   MapPin,
-     |   ^^^^^^
-  17 |   Search,
-  18 |   AlertCircle,
-  19 |   FileText,
-
-the name `MapPin` is defined multiple times
-
-Import traces:
-  Client Component Browser:
-    ./app/page.tsx [Client Component Browser]
-    ./app/page.tsx [Server Component]
-
-  Client Component SSR:
-    ./app/page.tsx [Client Component SSR]
-    ./app/page.tsx [Server Component]
-[00:04:33.508] Browser ERROR   ./app/page.tsx:17:3
-Ecmascript file had an error
-  15 |   Sparkles,
-  16 |   MapPin,
-> 17 |   Search,
-     |   ^^^^^^
-  18 |   AlertCircle,
-  19 |   FileText,
-  20 |   Globe,
-
-the name `Search` is defined multiple times
-
-Import traces:
-  Client Component Browser:
-    ./app/page.tsx [Client Component Browser]
-    ./app/page.tsx [Server Component]
-
-  Client Component SSR:
-    ./app/page.tsx [Client Component SSR]
-    ./app/page.tsx [Server Component]
-[00:04:33.508] Browser ERROR   ./app/page.tsx:15:3
-Ecmascript file had an error
-  13 | import {
-  14 |   BookOpen,
-> 15 |   Sparkles,
-     |   ^^^^^^^^
-  16 |   MapPin,
-  17 |   Search,
-  18 |   AlertCircle,
-
-the name `Sparkles` is defined multiple times
-
-Import traces:
-  Client Component Browser:
-    ./app/page.tsx [Client Component Browser]
-    ./app/page.tsx [Server Component]
-
-  Client Component SSR:
-    ./app/page.tsx [Client Component SSR]
-    ./app/page.tsx [Server Component]
-[00:04:33.508] Browser ERROR   ./app/page.tsx:18:3
-Ecmascript file had an error
-  16 |   MapPin,
-  17 |   Search,
-> 18 |   AlertCircle,
-     |   ^^^^^^^^^^^
-  19 |   FileText,
-  20 |   Globe,
-  21 |   ImageIcon,
-
-the name `AlertCircle` is defined multiple times
-
-Import traces:
-  Client Component Browser:
-    ./app/page.tsx [Client Component Browser]
-    ./app/page.tsx [Server Component]
-
-  Client Component SSR:
-    ./app/page.tsx [Client Component SSR]
-    ./app/page.tsx [Server Component]
-[00:04:33.508] Browser ERROR   ./app/page.tsx:14:3
-Ecmascript file had an error
-  12 | import ReactMarkdown from "react-markdown";
-  13 | import {
-> 14 |   BookOpen,
-     |   ^^^^^^^^
-  15 |   Sparkles,
-  16 |   MapPin,
-  17 |   Search,
-
-the name `BookOpen` is defined multiple times
-
-Import traces:
-  Client Component Browser:
-    ./app/page.tsx [Client Component Browser]
-    ./app/page.tsx [Server Component]
-
-  Client Component SSR:
-    ./app/page.tsx [Client Component SSR]
-    ./app/page.tsx [Server Component]
-[00:04:33.508] Browser ERROR   ./app/page.tsx:19:3
-Ecmascript file had an error
-  17 |   Search,
-  18 |   AlertCircle,
-> 19 |   FileText,
-     |   ^^^^^^^^
-  20 |   Globe,
-  21 |   ImageIcon,
-  22 | } from "lucide-react"; // Added ImageIcon
-
-the name `FileText` is defined multiple times
-
-Import traces:
-  Client Component Browser:
-    ./app/page.tsx [Client Component Browser]
-    ./app/page.tsx [Server Component]
-
-  Client Component SSR:
-    ./app/page.tsx [Client Component SSR]
-    ./app/page.tsx [Server Component]
-[00:04:33.508] Browser ERROR   ./app/page.tsx:20:3
-Ecmascript file had an error
-  18 |   AlertCircle,
-  19 |   FileText,
-> 20 |   Globe,
-     |   ^^^^^
-  21 |   ImageIcon,
-  22 | } from "lucide-react"; // Added ImageIcon
-  23 | import remarkMath from "remark-math";
-
-the name `Globe` is defined multiple times
-
-Import traces:
-  Client Component Browser:
-    ./app/page.tsx [Client Component Browser]
-    ./app/page.tsx [Server Component]
-
-  Client Component SSR:
-    ./app/page.tsx [Client Component SSR]
-    ./app/page.tsx [Server Component]
-[00:04:33.508] Browser ERROR   ./app/page.tsx:16:3
-Ecmascript file had an error
-  14 |   BookOpen,
-  15 |   Sparkles,
-> 16 |   MapPin,
-     |   ^^^^^^
-  17 |   Search,
-  18 |   AlertCircle,
-  19 |   FileText,
-
-the name `MapPin` is defined multiple times
-
-Import traces:
-  Client Component Browser:
-    ./app/page.tsx [Client Component Browser]
-    ./app/page.tsx [Server Component]
-
-  Client Component SSR:
-    ./app/page.tsx [Client Component SSR]
-    ./app/page.tsx [Server Component]
-[00:04:33.508] Browser ERROR   ./app/page.tsx:17:3
-Ecmascript file had an error
-  15 |   Sparkles,
-  16 |   MapPin,
-> 17 |   Search,
-     |   ^^^^^^
-  18 |   AlertCircle,
-  19 |   FileText,
-  20 |   Globe,
-
-the name `Search` is defined multiple times
-
-Import traces:
-  Client Component Browser:
-    ./app/page.tsx [Client Component Browser]
-    ./app/page.tsx [Server Component]
-
-  Client Component SSR:
-    ./app/page.tsx [Client Component SSR]
-    ./app/page.tsx [Server Component]
-[00:04:33.508] Browser ERROR   ./app/page.tsx:15:3
-Ecmascript file had an error
-  13 | import {
-  14 |   BookOpen,
-> 15 |   Sparkles,
-     |   ^^^^^^^^
-  16 |   MapPin,
-  17 |   Search,
-  18 |   AlertCircle,
-
-the name `Sparkles` is defined multiple times
-
-Import traces:
-  Client Component Browser:
-    ./app/page.tsx [Client Component Browser]
-    ./app/page.tsx [Server Component]
-
-  Client Component SSR:
-    ./app/page.tsx [Client Component SSR]
-    ./app/page.tsx [Server Component]
-[00:04:33.508] Browser ERROR   ./app/page.tsx:18:3
-Ecmascript file had an error
-  16 |   MapPin,
-  17 |   Search,
-> 18 |   AlertCircle,
-     |   ^^^^^^^^^^^
-  19 |   FileText,
-  20 |   Globe,
-  21 |   ImageIcon,
-
-the name `AlertCircle` is defined multiple times
-
-Import traces:
-  Client Component Browser:
-    ./app/page.tsx [Client Component Browser]
-    ./app/page.tsx [Server Component]
-
-  Client Component SSR:
-    ./app/page.tsx [Client Component SSR]
-    ./app/page.tsx [Server Component]
-[00:04:33.508] Browser ERROR   ./app/page.tsx:14:3
-Ecmascript file had an error
-  12 | import ReactMarkdown from "react-markdown";
-  13 | import {
-> 14 |   BookOpen,
-     |   ^^^^^^^^
-  15 |   Sparkles,
-  16 |   MapPin,
-  17 |   Search,
-
-the name `BookOpen` is defined multiple times
-
-Import traces:
-  Client Component Browser:
-    ./app/page.tsx [Client Component Browser]
-    ./app/page.tsx [Server Component]
-
-  Client Component SSR:
-    ./app/page.tsx [Client Component SSR]
-    ./app/page.tsx [Server Component]
-[00:04:33.508] Browser ERROR   ./app/page.tsx:19:3
-Ecmascript file had an error
-  17 |   Search,
-  18 |   AlertCircle,
-> 19 |   FileText,
-     |   ^^^^^^^^
-  20 |   Globe,
-  21 |   ImageIcon,
-  22 | } from "lucide-react"; // Added ImageIcon
-
-the name `FileText` is defined multiple times
-
-Import traces:
-  Client Component Browser:
-    ./app/page.tsx [Client Component Browser]
-    ./app/page.tsx [Server Component]
-
-  Client Component SSR:
-    ./app/page.tsx [Client Component SSR]
-    ./app/page.tsx [Server Component]
-[00:04:33.508] Browser ERROR   ./app/page.tsx:20:3
-Ecmascript file had an error
-  18 |   AlertCircle,
-  19 |   FileText,
-> 20 |   Globe,
-     |   ^^^^^
-  21 |   ImageIcon,
-  22 | } from "lucide-react"; // Added ImageIcon
-  23 | import remarkMath from "remark-math";
-
-the name `Globe` is defined multiple times
-
-Import traces:
-  Client Component Browser:
-    ./app/page.tsx [Client Component Browser]
-    ./app/page.tsx [Server Component]
-
-  Client Component SSR:
-    ./app/page.tsx [Client Component SSR]
-    ./app/page.tsx [Server Component]
-[00:04:33.508] Browser ERROR   ./app/page.tsx:16:3
-Ecmascript file had an error
-  14 |   BookOpen,
-  15 |   Sparkles,
-> 16 |   MapPin,
-     |   ^^^^^^
-  17 |   Search,
-  18 |   AlertCircle,
-  19 |   FileText,
-
-the name `MapPin` is defined multiple times
-
-Import traces:
-  Client Component Browser:
-    ./app/page.tsx [Client Component Browser]
-    ./app/page.tsx [Server Component]
-
-  Client Component SSR:
-    ./app/page.tsx [Client Component SSR]
-    ./app/page.tsx [Server Component]
-[00:04:33.508] Browser ERROR   ./app/page.tsx:17:3
-Ecmascript file had an error
-  15 |   Sparkles,
-  16 |   MapPin,
-> 17 |   Search,
-     |   ^^^^^^
-  18 |   AlertCircle,
-  19 |   FileText,
-  20 |   Globe,
-
-the name `Search` is defined multiple times
-
-Import traces:
-  Client Component Browser:
-    ./app/page.tsx [Client Component Browser]
-    ./app/page.tsx [Server Component]
-
-  Client Component SSR:
-    ./app/page.tsx [Client Component SSR]
-    ./app/page.tsx [Server Component]
-[00:04:33.508] Browser ERROR   ./app/page.tsx:15:3
-Ecmascript file had an error
-  13 | import {
-  14 |   BookOpen,
-> 15 |   Sparkles,
-     |   ^^^^^^^^
-  16 |   MapPin,
-  17 |   Search,
-  18 |   AlertCircle,
-
-the name `Sparkles` is defined multiple times
-
-Import traces:
-  Client Component Browser:
-    ./app/page.tsx [Client Component Browser]
-    ./app/page.tsx [Server Component]
-
-  Client Component SSR:
-    ./app/page.tsx [Client Component SSR]
-    ./app/page.tsx [Server Component]
-[00:06:06.129] Server  ERROR    ⨯ ./app/page.tsx:18:3
-Ecmascript file had an error
-  16 |   MapPin,
-  17 |   Search,
-> 18 |   AlertCircle,
-     |   ^^^^^^^^^^^
-  19 |   FileText,
-  20 |   Globe,
-  21 |   ImageIcon,
-
-the name `AlertCircle` is defined multiple times
-
-Import traces:
-  Client Component Browser:
-    ./app/page.tsx [Client Component Browser]
-    ./app/page.tsx [Server Component]
-
-  Client Component SSR:
-    ./app/page.tsx [Client Component SSR]
-    ./app/page.tsx [Server Component]
-
-
-
-./app/page.tsx:14:3
-Ecmascript file had an error
-  12 | import ReactMarkdown from "react-markdown";
-  13 | import {
-> 14 |   BookOpen,
-     |   ^^^^^^^^
-  15 |   Sparkles,
-  16 |   MapPin,
-  17 |   Search,
-
-the name `BookOpen` is defined multiple times
-
-Import traces:
-  Client Component Browser:
-    ./app/page.tsx [Client Component Browser]
-    ./app/page.tsx [Server Component]
-
-  Client Component SSR:
-    ./app/page.tsx [Client Component SSR]
-    ./app/page.tsx [Server Component]
-
-
-
-./app/page.tsx:19:3
-Ecmascript file had an error
-  17 |   Search,
-  18 |   AlertCircle,
-> 19 |   FileText,
-     |   ^^^^^^^^
-  20 |   Globe,
-  21 |   ImageIcon,
-  22 | } from "lucide-react"; // Added ImageIcon
-
-the name `FileText` is defined multiple times
-
-Import traces:
-  Client Component Browser:
-    ./app/page.tsx [Client Component Browser]
-    ./app/page.tsx [Server Component]
-
-  Client Component SSR:
-    ./app/page.tsx [Client Component SSR]
-    ./app/page.tsx [Server Component]
-
-
-
-./app/page.tsx:20:3
-Ecmascript file had an error
-  18 |   AlertCircle,
-  19 |   FileText,
-> 20 |   Globe,
-     |   ^^^^^
-  21 |   ImageIcon,
-  22 | } from "lucide-react"; // Added ImageIcon
-  23 | import remarkMath from "remark-math";
-
-the name `Globe` is defined multiple times
-
-Import traces:
-  Client Component Browser:
-    ./app/page.tsx [Client Component Browser]
-    ./app/page.tsx [Server Component]
-
-  Client Component SSR:
-    ./app/page.tsx [Client Component SSR]
-    ./app/page.tsx [Server Component]
-
-
-
-./app/page.tsx:16:3
-Ecmascript file had an error
-  14 |   BookOpen,
-  15 |   Sparkles,
-> 16 |   MapPin,
-     |   ^^^^^^
-  17 |   Search,
-  18 |   AlertCircle,
-  19 |   FileText,
-
-the name `MapPin` is defined multiple times
-
-Import traces:
-  Client Component Browser:
-    ./app/page.tsx [Client Component Browser]
-    ./app/page.tsx [Server Component]
-
-  Client Component SSR:
-    ./app/page.tsx [Client Component SSR]
-    ./app/page.tsx [Server Component]
-
-
-
-./app/page.tsx:17:3
-Ecmascript file had an error
-  15 |   Sparkles,
-  16 |   MapPin,
-> 17 |   Search,
-     |   ^^^^^^
-  18 |   AlertCircle,
-  19 |   FileText,
-  20 |   Globe,
-
-the name `Search` is defined multiple times
-
-Import traces:
-  Client Component Browser:
-    ./app/page.tsx [Client Component Browser]
-    ./app/page.tsx [Server Component]
-
-  Client Component SSR:
-    ./app/page.tsx [Client Component SSR]
-    ./app/page.tsx [Server Component]
-
-
-
-./app/page.tsx:15:3
-Ecmascript file had an error
-  13 | import {
-  14 |   BookOpen,
-> 15 |   Sparkles,
-     |   ^^^^^^^^
-  16 |   MapPin,
-  17 |   Search,
-  18 |   AlertCircle,
-
-the name `Sparkles` is defined multiple times
-
-Import traces:
-  Client Component Browser:
-    ./app/page.tsx [Client Component Browser]
-    ./app/page.tsx [Server Component]
-
-  Client Component SSR:
-    ./app/page.tsx [Client Component SSR]
-    ./app/page.tsx [Server Component]
-
-
-[00:06:08.443] Browser ERROR   uncaughtError: Error: ./app/page.tsx:18:3
-Ecmascript file had an error
-  16 |   MapPin,
-  17 |   Search,
-> 18 |   AlertCircle,
-     |   ^^^^^^^^^^^
-  19 |   FileText,
-  20 |   Globe,
-  21 |   ImageIcon,
-
-the name `AlertCircle` is defined multiple times
-
-Import traces:
-  Client Component Browser:
-    ./app/page.tsx [Client Component Browser]
-    ./app/page.tsx [Server Component]
-
-  Client Component SSR:
-    ./app/page.tsx [Client Component SSR]
-    ./app/page.tsx [Server Component]
-
-
-[00:06:08.695] Browser ERROR   ./app/page.tsx:18:3
-Ecmascript file had an error
-  16 |   MapPin,
-  17 |   Search,
-> 18 |   AlertCircle,
-     |   ^^^^^^^^^^^
-  19 |   FileText,
-  20 |   Globe,
-  21 |   ImageIcon,
-
-the name `AlertCircle` is defined multiple times
-
-Import traces:
-  Client Component Browser:
-    ./app/page.tsx [Client Component Browser]
-    ./app/page.tsx [Server Component]
-
-  Client Component SSR:
-    ./app/page.tsx [Client Component SSR]
-    ./app/page.tsx [Server Component]
-[00:06:08.695] Browser ERROR   ./app/page.tsx:14:3
-Ecmascript file had an error
-  12 | import ReactMarkdown from "react-markdown";
-  13 | import {
-> 14 |   BookOpen,
-     |   ^^^^^^^^
-  15 |   Sparkles,
-  16 |   MapPin,
-  17 |   Search,
-
-the name `BookOpen` is defined multiple times
-
-Import traces:
-  Client Component Browser:
-    ./app/page.tsx [Client Component Browser]
-    ./app/page.tsx [Server Component]
-
-  Client Component SSR:
-    ./app/page.tsx [Client Component SSR]
-    ./app/page.tsx [Server Component]
-[00:06:08.695] Browser ERROR   ./app/page.tsx:19:3
-Ecmascript file had an error
-  17 |   Search,
-  18 |   AlertCircle,
-> 19 |   FileText,
-     |   ^^^^^^^^
-  20 |   Globe,
-  21 |   ImageIcon,
-  22 | } from "lucide-react"; // Added ImageIcon
-
-the name `FileText` is defined multiple times
-
-Import traces:
-  Client Component Browser:
-    ./app/page.tsx [Client Component Browser]
-    ./app/page.tsx [Server Component]
-
-  Client Component SSR:
-    ./app/page.tsx [Client Component SSR]
-    ./app/page.tsx [Server Component]
-[00:06:08.695] Browser ERROR   ./app/page.tsx:20:3
-Ecmascript file had an error
-  18 |   AlertCircle,
-  19 |   FileText,
-> 20 |   Globe,
-     |   ^^^^^
-  21 |   ImageIcon,
-  22 | } from "lucide-react"; // Added ImageIcon
-  23 | import remarkMath from "remark-math";
-
-the name `Globe` is defined multiple times
-
-Import traces:
-  Client Component Browser:
-    ./app/page.tsx [Client Component Browser]
-    ./app/page.tsx [Server Component]
-
-  Client Component SSR:
-    ./app/page.tsx [Client Component SSR]
-    ./app/page.tsx [Server Component]
-[00:06:08.695] Browser ERROR   ./app/page.tsx:16:3
-Ecmascript file had an error
-  14 |   BookOpen,
-  15 |   Sparkles,
-> 16 |   MapPin,
-     |   ^^^^^^
-  17 |   Search,
-  18 |   AlertCircle,
-  19 |   FileText,
-
-the name `MapPin` is defined multiple times
-
-Import traces:
-  Client Component Browser:
-    ./app/page.tsx [Client Component Browser]
-    ./app/page.tsx [Server Component]
-
-  Client Component SSR:
-    ./app/page.tsx [Client Component SSR]
-    ./app/page.tsx [Server Component]
-[00:06:08.695] Browser ERROR   ./app/page.tsx:17:3
-Ecmascript file had an error
-  15 |   Sparkles,
-  16 |   MapPin,
-> 17 |   Search,
-     |   ^^^^^^
-  18 |   AlertCircle,
-  19 |   FileText,
-  20 |   Globe,
-
-the name `Search` is defined multiple times
-
-Import traces:
-  Client Component Browser:
-    ./app/page.tsx [Client Component Browser]
-    ./app/page.tsx [Server Component]
-
-  Client Component SSR:
-    ./app/page.tsx [Client Component SSR]
-    ./app/page.tsx [Server Component]
-[00:06:08.695] Browser ERROR   ./app/page.tsx:15:3
-Ecmascript file had an error
-  13 | import {
-  14 |   BookOpen,
-> 15 |   Sparkles,
-     |   ^^^^^^^^
-  16 |   MapPin,
-  17 |   Search,
-  18 |   AlertCircle,
-
-the name `Sparkles` is defined multiple times
-
-Import traces:
-  Client Component Browser:
-    ./app/page.tsx [Client Component Browser]
-    ./app/page.tsx [Server Component]
-
-  Client Component SSR:
-    ./app/page.tsx [Client Component SSR]
-    ./app/page.tsx [Server Component]
-[00:06:08.979] Browser ERROR   ./app/page.tsx:18:3
-Ecmascript file had an error
-  16 |   MapPin,
-  17 |   Search,
-> 18 |   AlertCircle,
-     |   ^^^^^^^^^^^
-  19 |   FileText,
-  20 |   Globe,
-  21 |   ImageIcon,
-
-the name `AlertCircle` is defined multiple times
-
-Import traces:
-  Client Component Browser:
-    ./app/page.tsx [Client Component Browser]
-    ./app/page.tsx [Server Component]
-
-  Client Component SSR:
-    ./app/page.tsx [Client Component SSR]
-    ./app/page.tsx [Server Component]
-[00:06:08.980] Browser ERROR   ./app/page.tsx:14:3
-Ecmascript file had an error
-  12 | import ReactMarkdown from "react-markdown";
-  13 | import {
-> 14 |   BookOpen,
-     |   ^^^^^^^^
-  15 |   Sparkles,
-  16 |   MapPin,
-  17 |   Search,
-
-the name `BookOpen` is defined multiple times
-
-Import traces:
-  Client Component Browser:
-    ./app/page.tsx [Client Component Browser]
-    ./app/page.tsx [Server Component]
-
-  Client Component SSR:
-    ./app/page.tsx [Client Component SSR]
-    ./app/page.tsx [Server Component]
-[00:06:08.980] Browser ERROR   ./app/page.tsx:19:3
-Ecmascript file had an error
-  17 |   Search,
-  18 |   AlertCircle,
-> 19 |   FileText,
-     |   ^^^^^^^^
-  20 |   Globe,
-  21 |   ImageIcon,
-  22 | } from "lucide-react"; // Added ImageIcon
-
-the name `FileText` is defined multiple times
-
-Import traces:
-  Client Component Browser:
-    ./app/page.tsx [Client Component Browser]
-    ./app/page.tsx [Server Component]
-
-  Client Component SSR:
-    ./app/page.tsx [Client Component SSR]
-    ./app/page.tsx [Server Component]
-[00:06:08.980] Browser ERROR   ./app/page.tsx:20:3
-Ecmascript file had an error
-  18 |   AlertCircle,
-  19 |   FileText,
-> 20 |   Globe,
-     |   ^^^^^
-  21 |   ImageIcon,
-  22 | } from "lucide-react"; // Added ImageIcon
-  23 | import remarkMath from "remark-math";
-
-the name `Globe` is defined multiple times
-
-Import traces:
-  Client Component Browser:
-    ./app/page.tsx [Client Component Browser]
-    ./app/page.tsx [Server Component]
-
-  Client Component SSR:
-    ./app/page.tsx [Client Component SSR]
-    ./app/page.tsx [Server Component]
-[00:06:08.980] Browser ERROR   ./app/page.tsx:16:3
-Ecmascript file had an error
-  14 |   BookOpen,
-  15 |   Sparkles,
-> 16 |   MapPin,
-     |   ^^^^^^
-  17 |   Search,
-  18 |   AlertCircle,
-  19 |   FileText,
-
-the name `MapPin` is defined multiple times
-
-Import traces:
-  Client Component Browser:
-    ./app/page.tsx [Client Component Browser]
-    ./app/page.tsx [Server Component]
-
-  Client Component SSR:
-    ./app/page.tsx [Client Component SSR]
-    ./app/page.tsx [Server Component]
-[00:06:08.980] Browser ERROR   ./app/page.tsx:17:3
-Ecmascript file had an error
-  15 |   Sparkles,
-  16 |   MapPin,
-> 17 |   Search,
-     |   ^^^^^^
-  18 |   AlertCircle,
-  19 |   FileText,
-  20 |   Globe,
-
-the name `Search` is defined multiple times
-
-Import traces:
-  Client Component Browser:
-    ./app/page.tsx [Client Component Browser]
-    ./app/page.tsx [Server Component]
-
-  Client Component SSR:
-    ./app/page.tsx [Client Component SSR]
-    ./app/page.tsx [Server Component]
-[00:06:08.980] Browser ERROR   ./app/page.tsx:15:3
-Ecmascript file had an error
-  13 | import {
-  14 |   BookOpen,
-> 15 |   Sparkles,
-     |   ^^^^^^^^
-  16 |   MapPin,
-  17 |   Search,
-  18 |   AlertCircle,
-
-the name `Sparkles` is defined multiple times
-
-Import traces:
-  Client Component Browser:
-    ./app/page.tsx [Client Component Browser]
-    ./app/page.tsx [Server Component]
-
-  Client Component SSR:
-    ./app/page.tsx [Client Component SSR]
-    ./app/page.tsx [Server Component]
-[00:07:39.241] Server  LOG      ✓ Compiled in 1177ms
+[00:02:50.295] Server  LOG      ✓ Compiled in 1104ms
+[00:03:16.971] Browser LOG     Connecting to: http://127.0.0.1:8000

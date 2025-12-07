@@ -1,6 +1,6 @@
 "use client";
 import { useState } from "react";
-// 👇 FIXED: All icons are now in ONE single import line
+// 👇 FIXED: merged all icons into one clean import line
 import {
   BookOpen,
   Sparkles,
@@ -10,6 +10,8 @@ import {
   FileText,
   Globe,
   ImageIcon,
+  Volume2,
+  StopCircle,
 } from "lucide-react";
 import ReactMarkdown from "react-markdown";
 import remarkMath from "remark-math";
@@ -43,7 +45,26 @@ export default function Home() {
   const [subject, setSubject] = useState("");
   const [response, setResponse] = useState<any>(null);
   const [loading, setLoading] = useState(false);
+  const [isSpeaking, setIsSpeaking] = useState(false);
   const [error, setError] = useState("");
+
+  const handleSpeak = (text: string) => {
+    if (isSpeaking) {
+      window.speechSynthesis.cancel();
+      setIsSpeaking(false);
+      return;
+    }
+
+    const utterance = new SpeechSynthesisUtterance(text);
+    // Optional: Set pitch/rate
+    utterance.rate = 1.0;
+    utterance.pitch = 1.0;
+
+    utterance.onend = () => setIsSpeaking(false);
+
+    window.speechSynthesis.speak(utterance);
+    setIsSpeaking(true);
+  };
 
   const handleSearch = async () => {
     if (!subject) return;
@@ -51,8 +72,17 @@ export default function Home() {
     setError("");
     setResponse(null);
 
+    // 👇 SMART SWITCH: Auto-detects where you are
+    const isLocal =
+      typeof window !== "undefined" && window.location.hostname === "localhost";
+    const API_URL = isLocal
+      ? "http://127.0.0.1:8000" // Use this on your laptop
+      : "https://tutorb.onrender.com"; // Use this on Netlify
+
     try {
-      const res = await fetch("http://127.0.0.1:8000/teach", {
+      console.log("Connecting to:", API_URL); // Debug log to see where it's going
+
+      const res = await fetch(`${API_URL}/teach`, {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify({ subject }),
@@ -63,6 +93,7 @@ export default function Home() {
       setResponse(data);
     } catch (err) {
       setError("Server connection failed. Is the backend running?");
+      console.error(err);
     } finally {
       setLoading(false);
     }
@@ -124,7 +155,10 @@ export default function Home() {
                            font-semibold transition-all disabled:opacity-50 disabled:cursor-not-allowed flex items-center gap-2 shadow-lg shadow-green-900/20"
               >
                 {loading ? (
-                  <span className="animate-pulse">...</span>
+                  <span className="animate-pulse flex items-center gap-2">
+                    <Sparkles className="w-4 h-4 animate-spin" />
+                    Waking up Brain...
+                  </span>
                 ) : (
                   <>
                     <Search className="w-4 h-4 md:w-5 md:h-5" />
@@ -157,10 +191,29 @@ export default function Home() {
                   </div>
 
                   <div className="space-y-3 w-full min-w-0">
-                    <h3 className="text-xs font-bold text-slate-400 uppercase tracking-widest flex items-center gap-2">
-                      <Sparkles className="w-4 h-4 text-yellow-400 md:hidden" />
-                      The Explanation
-                    </h3>
+                    <div className="flex items-center justify-between mb-2">
+                      <h3 className="text-xs font-bold text-slate-400 uppercase tracking-widest flex items-center gap-2">
+                        <Sparkles className="w-4 h-4 text-yellow-400 md:hidden" />
+                        The Explanation
+                      </h3>
+
+                      <button
+                        onClick={() => handleSpeak(response.response)}
+                        className="flex items-center gap-2 text-xs font-bold text-green-400 hover:text-green-300 transition-colors bg-green-400/10 px-3 py-1.5 rounded-full border border-green-400/20"
+                      >
+                        {isSpeaking ? (
+                          <>
+                            <StopCircle className="w-3 h-3 animate-pulse" />
+                            <span>Stop Reading</span>
+                          </>
+                        ) : (
+                          <>
+                            <Volume2 className="w-3 h-3" />
+                            <span>Listen</span>
+                          </>
+                        )}
+                      </button>
+                    </div>
 
                     <div className="prose prose-invert prose-lg max-w-none text-slate-200 text-justify">
                       <ReactMarkdown
@@ -223,8 +276,8 @@ export default function Home() {
                       {/* Raw Text Content */}
                       <div
                         className="text-sm text-slate-300 text-justify leading-relaxed break-words 
-                                      prose prose-invert prose-sm max-w-none 
-                                      line-clamp-4 hover:line-clamp-none transition-all cursor-pointer mb-4"
+                                     prose prose-invert prose-sm max-w-none 
+                                     line-clamp-4 hover:line-clamp-none transition-all cursor-pointer mb-4"
                       >
                         <ReactMarkdown
                           remarkPlugins={[remarkMath]}
